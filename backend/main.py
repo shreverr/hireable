@@ -1,7 +1,9 @@
 from dotenv import load_dotenv
-# Load environment variables from .env file
 load_dotenv()
-from config.db import db
 
+from config.db import connectDb
+connectDb()
+
+from models.user import User
 
 print("app running")
