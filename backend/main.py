@@ -1,1 +1,7 @@
-print("hello")
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
+from config.db import db
+
+
+print("app running")
