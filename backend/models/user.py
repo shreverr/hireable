@@ -15,10 +15,13 @@ class Socials(EmbeddedDocument):
     leetcodeUrl = StringField(default="")
     xUrl = StringField(default="")
 
+
 class User(Document):
     name = StringField(required=True)
     email = EmailField()
     socials = EmbeddedDocumentField(Socials, default=Socials)
+    resume_url = StringField(required=True)
+    portfolio_url = StringField()
 
 
 # u = User(name="Alice", email="alice@example.com", socials=Socials(
