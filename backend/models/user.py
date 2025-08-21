@@ -20,7 +20,7 @@ class User(Document):
     name = StringField(required=True)
     email = EmailField()
     socials = EmbeddedDocumentField(Socials, default=Socials)
-    resume_url = StringField(required=True)
+    resume_url = StringField()
     portfolio_url = StringField()
 
 

@@ -1,165 +1,227 @@
 from __future__ import annotations
 from pydantic import BaseModel
-from portia.builder import PlanBuilderV2, StepOutput, Input
+# from portia.builder import PlanBuilderV2, StepOutput, Input
 from models.user import User
-from typing import Optional
+from typing import Optional, Dict, Any
 
 from config.portia import config
-from portia import open_source_tool_registry, Portia
+from portia import Portia
+# from portia.open_source_tools.pdf_reader_tool import PDFReaderTool
+from portia.open_source_tools.crawl_tool import CrawlTool
+from portia.open_source_tools.search_tool import SearchTool
+from tools.pdf_reader import PdfToMarkdownTool
 
 
-def scrapeSocials():
-    """If the user's socials are already filled in DB, return them; otherwise continue later.
+
+class SocialInput(BaseModel):
+    """Optional inputs that can be supplied to the scraper/update flow.
+
+    All fields are optional. Provide only what you have; missing ones may be
+    discovered via scraping or left as-is depending on the caller logic.
+    """
+    githubUrl: Optional[str] = None
+    linkedInUrl: Optional[str] = None
+    leetcodeUrl: Optional[str] = None
+    xUrl: Optional[str] = None
+    resume_url: Optional[str] = None
+    portfolio_url: Optional[str] = None
+
+
+def scrapeSocials(userId: str, data: Optional[Dict[str, Any]] = None):
+    """Collect or update a user's social/profile URLs.
 
     Args:
-            urls: A list of URL strings to process (not used when returning cached socials).
-            userId: The user's document ID in the database.
+        userId: The user's document ID in the database.
+        data: Optional dictionary that may include any of these keys (all optional):
+              - githubUrl
+              - linkedInUrl
+              - leetcodeUrl
+              - xUrl
+              - resume_url
+              - portfolio_url
+
+              Extra keys are ignored. Missing keys are treated as None.
 
     Returns:
-            A dict with keys githubUrl, linkedInUrl, leetcodeUrl, xUrl if all are present; otherwise None.
+        A dict-like structure with the social/profile URLs discovered or provided, or None.
     """
+
+    # Validate and normalize input dictionary so all expected fields are present or None
+    social_input = SocialInput.model_validate(data or {})
 
     # user = User.objects(id=userId).first()
 
     # socials, resume_url, portfolio_url = user.socials, user.resume_url, user.portfolio_url
 
-    prompt = """
-    Resume URl: https://res.cloudinary.com/dpf6c8boe/image/upload/v1750428758/mi6hnvneusqzav85tufz.pdf
-    
-    Your goal is to gather a specific set of social links for a given user. The required links are:
+    # Build a dynamic prompt from provided optional data
+    resume_line = (
+        f"Resume URL: {social_input.resume_url}"
+        if social_input.resume_url else "Resume URL: Not provided"
+    )
+    portfolio_line = (
+        f"Portfolio URL: {social_input.portfolio_url}"
+        if social_input.portfolio_url else "Portfolio URL: Not provided"
+    )
+    known_socials = []
+    if social_input.githubUrl:
+        known_socials.append(f"GitHub: {social_input.githubUrl}")
+    if social_input.linkedInUrl:
+        known_socials.append(f"LinkedIn: {social_input.linkedInUrl}")
+    if social_input.leetcodeUrl:
+        known_socials.append(f"LeetCode: {social_input.leetcodeUrl}")
+    if social_input.xUrl:
+        known_socials.append(f"X/Twitter: {social_input.xUrl}")
+    known_block = ("\nKnown socials (may be partial):\n- " + "\n- ".join(known_socials)) if known_socials else ""
 
-1. GitHub: Example format -> https://github.com/<username>
-2. LinkedIn: Example format -> https://www.linkedin.com/in/<username>/
-3. X (formerly Twitter): Example format -> https://x.com/<username>
-4. LeetCode: Example format -> https://leetcode.com/u/<username>/
 
-You will have access to the user's resume (typically as a PDF attachment) and, optionally, one or more portfolio links (as URLs). Follow this step-by-step process to extract the links:
+    prompt =f"""
+    {resume_line}
+    {portfolio_line}
+    {known_block}""" + """
 
-1. **Start with the resume**: Use available tools to scan the entire resume for mentions of the social links. Look for explicit URLs, usernames, or icons/hyperlinks indicating these platforms. Extract any matching links directly.
+Social Link Extractor Tool
+Your goal is to gather a specific set of links for a given user from provided URLs. The required links are:
+Social Media Links:
 
-2. **Check the portfolio (if provided)**: If a portfolio URL is available (e.g., from the resume or user input), use the available tool to visit the site. Scan the homepage, "About" section, footer, or contact page for the social links. Extract any matching ones.
+GitHub: Example format → https://github.com/<username>
+LinkedIn: Example format → https://www.linkedin.com/in/<username>/
+X (formerly Twitter): Example format → https://x.com/<username>
+LeetCode: Example format → https://leetcode.com/u/<username>/
 
-3. **Handle missing links**: If any of the four required links are still missing after steps 1 and 2:
-   - Use the links you've already found (e.g., GitHub or LinkedIn profile) as starting points.
-   - Browse those profiles (via browse_page) and check the bio, header, "About" section, or linked websites for references to the missing platforms.
-   - If needed, perform targeted web searches (via web_search) using the user's name combined with platform-specific queries (e.g., "John Doe LeetCode profile") to locate and verify missing links. Cross-reference with details from the resume to ensure accuracy.
+Professional Links:
+5. Portfolio: Personal website/portfolio (e.g., https://johndoe.dev, https://portfolio.johndoe.com)
+6. Resume: Direct link to resume/CV (PDF, Google Docs, or other formats)
+Process
+You will be provided with one or more URLs (such as portfolio websites, personal pages, or other social profiles). Follow this step-by-step process to extract the target links:
+Step 1: Analyze Provided URLs
 
-Prioritize direct extraction from primary sources (resume and portfolio) for reliability. Only use secondary methods (profile bios or searches) if necessary, and validate any discovered links by browsing them briefly to confirm they belong to the user.
+Use the web_fetch tool to visit each provided URL
+Scan the entire page content for:
 
-If a link cannot be found after exhaustive checks, note it as "Not found" with a brief explanation.
-	"""
+Direct links to the target platforms
+Social media icons/buttons
+Footer sections with social links
+"About" or "Contact" sections
+Navigation menus
+Bio sections
+
+
+
+Step 2: Extract Links from Primary Sources
+
+Look for explicit URLs matching the target formats
+Check for usernames or handles that can be constructed into full URLs
+Search for portfolio links (personal websites, custom domains)
+Look for resume/CV links (PDF downloads, Google Docs, drive links)
+Examine HTML anchor tags, social media widgets, and embedded links
+Check download buttons or "View Resume" links
+Verify any found links by briefly checking them
+
+Step 3: Follow Connected Profiles (if needed)
+If any of the six required links are missing after Step 1:
+
+Use any discovered social profiles as starting points
+Browse those profiles using web_fetch and check:
+
+Bio sections
+Header/banner areas
+"About" sections
+Linked websites or "Link in bio" references
+Profile descriptions
+
+
+
+Step 4: Targeted Web Search (last resort)
+If links are still missing after Steps 1-3:
+
+Perform targeted searches using web_search
+Use queries like:
+
+"[username/name]" site:github.com
+"[username/name]" site:linkedin.com
+"[username/name]" site:x.com
+"[username/name]" site:leetcode.com
+"[username/name]" portfolio
+"[username/name]" resume filetype:pdf
+
+
+Cross-reference search results with information from the provided URLs to ensure accuracy
+
+Output Format
+Provide results in JSON format:
+{
+  'source_urls': [
+    'https://example1.com',
+    'https://example2.com'
+  ],
+  'extracted_links': {
+    'social_media': {
+      'github': {
+        'url': 'https://github.com/username',
+        'status': 'found',
+        'extraction_method': 'Direct link from portfolio homepage'
+      },
+      'linkedin': {
+        'url': 'https://www.linkedin.com/in/username/',
+        'status': 'found',
+        'extraction_method': 'Footer social icons'
+      },
+      'twitter': {
+        'url': null,
+        'status': 'not_found',
+        'extraction_method': 'Checked all provided URLs and linked profiles'
+      },
+      'leetcode': {
+        'url': 'https://leetcode.com/u/username/',
+        'status': 'found',
+        'extraction_method': 'Found via GitHub profile bio'
+      }
+    },
+    'professional': {
+      'portfolio': {
+        'url': 'https://johndoe.dev',
+        'status': 'found',
+        'extraction_method': 'Primary URL provided'
+      },
+      'resume': {
+        'url': 'https://drive.google.com/file/d/.../resume.pdf',
+        'status': 'found',
+        'extraction_method': 'Download button on portfolio'
+      }
+    }
+  },
+  'summary': {
+    'total_found': 5,
+    'total_missing': 1,
+    'success_rate': '83%'
+  },
+  'notes': [
+    'Twitter/X profile could not be located after exhaustive search',
+    'All other links verified and confirmed to belong to the correct person'
+  ]
+}
+
+Important Guidelines
+
+Prioritize accuracy: Only report links that you can verify belong to the correct person
+Direct extraction first: Always check the provided URLs thoroughly before using secondary methods
+Validate links: Briefly visit discovered links to confirm they're active and belong to the right person
+Be thorough: Check multiple sections of each webpage (header, footer, about, contact, etc.)
+Cross-reference: Use information from multiple sources to verify identity consistency
+
+If a link cannot be found after exhaustive analysis, mark it as "Not found" with a brief explanation of what was checked.
+    """
     portia = Portia(
         config=config,
-        tools=open_source_tool_registry,
+        tools=[CrawlTool(), PdfToMarkdownTool(), SearchTool()],
     )
 
     plan = portia.plan(prompt)
     print(plan.pretty_print())
     plan_run = portia.run_plan(plan)
     print(plan_run.model_dump_json(indent=2))
-
-
-# Starting from Claude
-
-# Define the structured output schema
-
-class SocialLinksOutput(BaseModel):
-    github: Optional[str] = None
-    linkedin: Optional[str] = None
-    twitter_x: Optional[str] = None
-    leetcode: Optional[str] = None
-    notes: str = ""
-
-
-# Build the plan
-plan = (
-    PlanBuilderV2("Extract social media links from user resume and portfolio")
-    .input(
-        name="resume_content",
-        description="The user's resume content (extracted from PDF or provided text)"
-    )
-    .input(
-        name="portfolio_url",
-        description="Optional portfolio URL to scan for additional links",
-        default_value=None
-    )
-
-    # Step 1: Scan resume for social links
-    .llm_step(
-        task="Extract GitHub, LinkedIn, X/Twitter, and LeetCode links from the resume content. Look for explicit URLs, usernames, or any mentions of these platforms. Return found links in JSON format.",
-        inputs=[Input("resume_content")],
-        name="extract_from_resume"
-    )
-
-    # Step 2: If portfolio URL provided, scan it for additional links
-    .if_(
-        condition=lambda portfolio_url: portfolio_url is not None and portfolio_url.strip() != "",
-        args={"portfolio_url": Input("portfolio_url")}
-    )
-    .single_tool_agent_step(
-        tool="web_scraper",
-        task="Visit the portfolio website and extract any GitHub, LinkedIn, X/Twitter, or LeetCode links. Check homepage, about section, footer, and contact pages.",
-        inputs=[Input("portfolio_url")],
-        name="extract_from_portfolio"
-    )
-    .endif()
-
-    # Step 3: Combine results from resume and portfolio
-    .llm_step(
-        task="Combine the social links found from resume and portfolio. Create a consolidated list removing duplicates and prioritizing the most complete/accurate links.",
-        inputs=[StepOutput("extract_from_resume"),
-                StepOutput("extract_from_portfolio")],
-        name="combine_initial_results"
-    )
-
-    # Step 4: Check if any links are still missing and search for them
-    .llm_step(
-        task="Identify which of the 4 required social links (GitHub, LinkedIn, X/Twitter, LeetCode) are still missing from the combined results.",
-        inputs=[StepOutput("combine_initial_results")],
-        name="identify_missing_links"
-    )
-
-    # Step 5: If links are missing, use found profiles to search for missing ones
-    .if_(
-        condition="There are missing social media links that need to be found",
-        args={"missing_analysis": StepOutput("identify_missing_links")}
-    )
-    .single_tool_agent_step(
-        tool="web_search",
-        task="Search for missing social media profiles using the user's name and information from the resume combined with platform-specific queries (e.g., 'John Doe LeetCode profile')",
-        inputs=[StepOutput("identify_missing_links"), Input("resume_content")],
-        name="search_missing_links"
-    )
-    .endif()
-
-    # Step 6: Validate found links by checking if they belong to the user
-    .if_(
-        condition="New links were found that need validation",
-        args={"search_results": StepOutput("search_missing_links")}
-    )
-    .single_tool_agent_step(
-        tool="web_scraper",
-        task="Briefly visit the discovered social media profiles to validate they belong to the user by cross-referencing with details from the resume (name, skills, experience, etc.)",
-        inputs=[StepOutput("search_missing_links"), Input("resume_content")],
-        name="validate_found_links"
-    )
-    .endif()
-
-    # Step 7: Generate final consolidated results
-    .llm_step(
-        task="Create the final consolidated list of social media links. For each platform (GitHub, LinkedIn, X/Twitter, LeetCode), provide the link if found or mark as 'Not found' with explanation. Include any relevant notes about the search process.",
-        inputs=[
-            StepOutput("combine_initial_results"),
-            StepOutput("search_missing_links"),
-            StepOutput("validate_found_links")
-        ],
-        name="final_consolidation"
-    )
-
-    # Configure final output with structured schema
-    .final_output(
-        output_schema=SocialLinksOutput,
-        summarize=True
-    )
-    .build()
-)
+    # Return the structured result for downstream usage
+    try:
+        return plan_run.model_dump()
+    except Exception:
+        return None

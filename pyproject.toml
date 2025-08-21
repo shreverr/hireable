@@ -6,7 +6,8 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "mongoengine>=0.29.1",
-    "portia-sdk-python[google]>=0.6.2",
+    "portia-sdk-python[all,google]>=0.6.2",
     "pytest-playwright>=0.7.0",
     "python-dotenv>=1.1.1",
+    "pdfminer.six>=20240706",
 ]

@@ -3,8 +3,6 @@ from dotenv import load_dotenv
 from portia import (
     Config,
     LLMProvider,
-    Portia,
-    example_tool_registry,
 )
 
 load_dotenv()
