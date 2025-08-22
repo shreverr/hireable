@@ -57,8 +57,8 @@ Use tools as needed to retrieve data from the provided links before analysis. Al
    - Responsibilities and qualifications.
    - Any preferred attributes (e.g., open-source contributions, specific domains).
 
-2. Use concrete metrics to analyse candidates github {https://github.com/shreverr} at profile against the JD:
-    - You would use Github MCP for intial information.
+2. Use concrete metrics to analyse candidates github at {https://github.com/shreverr} at profile against the JD:
+    - Based on the criteria you would use tools to explore and evaluate the users github profile.
     - For visiting individual repositories and exploring code you would use crawler.
 
 3. Evaluate the alignment:
@@ -121,16 +121,6 @@ Use tools as needed to retrieve data from the provided links before analysis. Al
   "strengths": ["Array of strings - Key areas where candidate excels"],
   "gaps": ["Array of strings - Critical missing skills or experience"],
   "rationale": "string - Detailed explanation of the overall assessment"
-}
-```
-
-### 5. Recommendations
-```json
-"recommendations": {
-  "for_recruiter": ["Array of strings - Advice for the hiring team"],
-  "for_candidate": ["Array of strings - Suggestions for the candidate to improve their profile"],
-  "interview_focus": ["Array of strings - Key areas to explore during interviews"],
-  "final_recommendation": "string - Clear hire/no-hire/conditional recommendation"
 }
 ```
 
