@@ -1,0 +1,241 @@
+{
+  "jd_criteria_summary": {
+    "job_title": "Full Stack Development Intern (IIoT & Data Analytics Platform)",
+    "key_requirements": {
+      "required_skills": [
+        "JavaScript",
+        "Data Structures",
+        "Web Technologies",
+        "Angular",
+        "HTML/CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB or similar NoSQL",
+        "Git"
+      ],
+      "preferred_skills": [
+        "InfluxDB",
+        "Redis",
+        "MQTT/Kafka",
+        "Docker",
+        "CI/CD",
+        "Charting Libraries",
+        "Interest in time-series data",
+        "Interest in cloud-native development"
+      ],
+      "experience_level": "Intern (B.Tech 3rd year completed in CSE or related branches)",
+      "project_requirements": [
+        "Experience with at least one full stack project"
+      ],
+      "soft_skills": [
+        "Quick learner",
+        "Passion for real-world tech challenges",
+        "Collaborative",
+        "Ability to write clean, modular, and well-documented code"
+      ]
+    },
+    "role_context": {
+      "description": "A 12-month full-time paid internship focused on building scalable, production-grade systems for an industrial IoT data analytics platform. The role involves contributing to both frontend (Angular) and backend (Node.js) development, working with time-series databases like InfluxDB, and building real-time APIs.",
+      "duration": "12 months (full-time)",
+      "type": "Paid Internship (with PPO pathway)",
+      "location": "Mumbai"
+    }
+  },
+  "github_profile_summary": {
+    "username": "shreverr",
+    "bio": "A backend developer who primarily works with Typescript and Golang, and is currently learning Kubernetes.",
+    "self_reported_skills": [
+      "Go",
+      "JavaScript",
+      "TypeScript",
+      "Express.js",
+      "MongoDB",
+      "AWS",
+      "Netlify",
+      "Next.js",
+      "Node.js",
+      "React",
+      "Socket.io",
+      "Yarn",
+      "Git",
+      "GitHub",
+      "Kubernetes",
+      "Docker"
+    ],
+    "key_repositories": [
+      {
+        "name": "http-server-go",
+        "description": "A lightweight, customizable HTTP server built using the standard Go library to handle HTTP requests and serve responses."
+      },
+      {
+        "name": "node-rizz",
+        "description": "A low-code, AI-enhanced platform for backend generation and one-click deployment."
+      },
+      {
+        "name": "currency-exchange",
+        "description": "A simple command-line application written in Go that allows users to exchange currencies based on real-time rates."
+      },
+      {
+        "name": "reserv",
+        "description": "A reservation system built with NestJS, featuring a microservices architecture, authentication, and Docker support."
+      },
+      {
+        "name": "plannr",
+        "description": "An application for creating seating plans and schedules, likely built with Electron and React."
+      }
+    ],
+    "overall_profile_impression": "shreverr is a backend-focused developer with a strong proficiency in Go and TypeScript. The profile showcases a practical approach to software development, with projects ranging from foundational tools like a custom HTTP server to more complex, modern applications involving low-code platforms and microservices. Their interest in Kubernetes and contributions to AI-related projects indicate a forward-looking perspective on technology. The profile is well-structured and clearly communicates their skills and areas of focus.",
+    "activity_metrics": {
+      "followers": 25,
+      "repositories_count": "The user has over 30 public repositories, indicating a broad range of projects and experimentation.",
+      "recent_activity": "The user demonstrates consistent activity with frequent commits across multiple personal projects like `plannr`, `financepal`, `reserv`, and `http-server-go`. This suggests active development and maintenance of their codebase."
+    }
+  },
+  "linkedin_profile_summary": {
+    "name": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "headline": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "current_position": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "experience": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "education": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "skills_and_endorsements": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "certifications": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "recent_activity": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "network_quality": "No information available as the LinkedIn profile crawl was unsuccessful.",
+    "overall_profile_impression": "No information available as the LinkedIn profile crawl was unsuccessful."
+  },
+  "cross_platform_analysis": {
+    "consistency_score": "0/10 (Not applicable due to missing data)",
+    "complementary_strengths": "Analysis is one-sided. The GitHub profile strongly showcases technical proficiency in backend development (Go, TypeScript), practical project experience (microservices, low-code platforms), and a commitment to continuous learning (Kubernetes). A complete LinkedIn profile would typically complement this by providing professional context like work history, education, and endorsements, which are currently unavailable.",
+    "discrepancies": "No discrepancies can be identified as the LinkedIn profile data is unavailable for comparison.",
+    "assessment_of_professional_brand_coherence": "The professional brand is coherent and well-defined on GitHub, presenting a skilled backend developer. However, the overall brand coherence cannot be assessed due to the unsuccessful LinkedIn profile crawl. The absence of a corresponding professional network profile creates a significant gap in evaluating the individual's complete professional narrative and market positioning."
+  },
+  "evaluation_table": [
+    {
+      "criterion": "Core Backend Skills (JavaScript, Node.js, Express.js)",
+      "github_score": 9,
+      "github_evidence": "Self-reported skills include JavaScript, TypeScript, Node.js, and Express.js. Key repositories like 'node-rizz' (a low-code backend generation platform) and 'reserv' (built with NestJS, a Node.js framework) demonstrate strong, practical experience.",
+      "linkedin_score": 0,
+      "linkedin_evidence": "No information available as the LinkedIn profile crawl was unsuccessful.",
+      "combined_score": 9,
+      "match_status": "Strong Match",
+      "comments": "The candidate shows excellent proficiency in the required backend stack through multiple complex projects."
+    },
+    {
+      "criterion": "Core Frontend Skills (Angular, HTML/CSS)",
+      "github_score": 1,
+      "github_evidence": "The GitHub profile shows experience with React and Next.js ('plannr' project) but explicitly lacks any mention of Angular, which is a key requirement for the frontend part of the role.",
+      "linkedin_score": 0,
+      "linkedin_evidence": "No information available as the LinkedIn profile crawl was unsuccessful.",
+      "combined_score": 1,
+      "match_status": "No Match",
+      "comments": "Significant gap in a required technology. The candidate's frontend experience is in a different framework (React) than what the job requires (Angular)."
+    },
+    {
+      "criterion": "Database Skills (MongoDB or similar NoSQL)",
+      "github_score": 9,
+      "github_evidence": "MongoDB is explicitly listed in the self-reported skills. Projects like 'reserv' (microservices reservation system) strongly imply hands-on experience with a database like MongoDB.",
+      "linkedin_score": 0,
+      "linkedin_evidence": "No information available as the LinkedIn profile crawl was unsuccessful.",
+      "combined_score": 9,
+      "match_status": "Strong Match",
+      "comments": "The candidate meets the NoSQL database requirement with direct evidence of skill."
+    },
+    {
+      "criterion": "Version Control (Git)",
+      "github_score": 10,
+      "github_evidence": "Git is listed as a skill. The profile shows consistent activity with frequent commits across more than 30 public repositories, demonstrating expert practical use of Git.",
+      "linkedin_score": 0,
+      "linkedin_evidence": "No information available as the LinkedIn profile crawl was unsuccessful.",
+      "combined_score": 10,
+      "match_status": "Strong Match",
+      "comments": "Candidate has exemplary and consistent Git usage, which is a core requirement."
+    },
+    {
+      "criterion": "Full Stack Project Experience",
+      "github_score": 9,
+      "github_evidence": "The candidate has multiple projects that can be considered full stack, such as 'reserv' (NestJS microservices backend) and 'plannr' (Electron/React app). 'node-rizz' is a full platform. This exceeds the requirement of 'at least one' project.",
+      "linkedin_score": 0,
+      "linkedin_evidence": "No information available as the LinkedIn profile crawl was unsuccessful.",
+      "combined_score": 9,
+      "match_status": "Strong Match",
+      "comments": "The candidate has a strong portfolio of relevant projects demonstrating full-stack capabilities."
+    },
+    {
+      "criterion": "Preferred Skills (Docker, Cloud-Native, Time-Series)",
+      "github_score": 6,
+      "github_evidence": "Strong evidence for Docker (listed as a skill, used in 'reserv' project) and interest in cloud-native development (bio mentions 'currently learning Kubernetes'). However, there is no evidence of experience with time-series databases (InfluxDB), messaging queues (MQTT/Kafka), or charting libraries.",
+      "linkedin_score": 0,
+      "linkedin_evidence": "No information available as the LinkedIn profile crawl was unsuccessful.",
+      "combined_score": 6,
+      "match_status": "Partial Match",
+      "comments": "The candidate shows strong alignment with modern DevOps practices (Docker, K8s) but lacks experience in the specific data-related preferred skills for this IIoT role."
+    },
+    {
+      "criterion": "Experience Level (Intern, B.Tech 3rd year)",
+      "github_score": 5,
+      "github_evidence": "The GitHub profile does not contain information about the candidate's educational background or year of study. The quality and complexity of projects are consistent with a skilled student, but this cannot be confirmed.",
+      "linkedin_score": 0,
+      "linkedin_evidence": "No information available as the LinkedIn profile crawl was unsuccessful.",
+      "combined_score": 5,
+      "match_status": "Partial Match",
+      "comments": "Cannot verify the required educational status from the available data. A neutral score is assigned pending confirmation."
+    },
+    {
+      "criterion": "Soft Skills & Coding Practices",
+      "github_score": 8,
+      "github_evidence": "Bio shows the candidate is a 'quick learner' (learning Kubernetes). Consistent activity across 30+ repos shows 'passion'. Project descriptions like 'microservices architecture' ('reserv') and 'lightweight, customizable' ('http-server-go') suggest an understanding of writing 'clean, modular' code.",
+      "linkedin_score": 0,
+      "linkedin_evidence": "No information available as the LinkedIn profile crawl was unsuccessful.",
+      "combined_score": 8,
+      "match_status": "Strong Match",
+      "comments": "The profile strongly indicates the candidate possesses the desired soft skills and a thoughtful approach to software development."
+    }
+  ],
+  "platform_match_assessment": {
+    "github_match_assessment": {
+      "match_percentage": "71.25%",
+      "strengths": "The candidate is a strong match in core backend skills (Node.js, Express.js), NoSQL databases (MongoDB), and has expert-level version control (Git) skills. They also possess a strong portfolio of full-stack projects and exhibit desirable soft skills and coding practices.",
+      "gaps": "The primary gap is the complete lack of experience with the required frontend framework, Angular. There are also partial gaps in preferred skills, specifically time-series databases and messaging queues, and the candidate's required educational level cannot be verified from the profile."
+    },
+    "linkedin_match_assessment": {
+      "match_percentage": "0% (Data Unavailable)",
+      "strengths": "Not applicable due to missing data.",
+      "gaps": "The primary gap is the absence of a professional profile, preventing assessment of work history, education, and endorsements."
+    },
+    "combined_match_assessment": {
+      "overall_match_percentage": "71.25%",
+      "strengths": "The candidate's key strengths are their proven backend development skills (Node.js, MongoDB), expert version control with Git, and a strong portfolio of complex full-stack projects. They also show a strong aptitude for modern DevOps practices like Docker.",
+      "gaps": "The most critical gap is the lack of experience in the required frontend technology, Angular. The absence of a LinkedIn profile is also a significant gap, as it prevents verification of the candidate's educational background and professional experience.",
+      "rationale": "This assessment is based solely on the candidate's GitHub profile. While they are a very strong match for the backend aspects of the role, the complete mismatch on the core frontend technology (Angular) is a major concern. The unverified educational status is a secondary gap that needs clarification."
+    }
+  },
+  "professional_presentation": {
+    "github_professionalism_score": 9,
+    "linkedin_professionalism_score": 1,
+    "overall_brand_strength_score": 5,
+    "recommendations_for_improvement": [
+      "**Crucial:** Ensure the LinkedIn profile is public, complete, and easily discoverable. The inability to access it is a major weakness in professional branding.",
+      "Align the LinkedIn headline and summary with the clear, professional branding established on GitHub (e.g., 'Backend Developer | Go & TypeScript').",
+      "Showcase key GitHub projects in the 'Featured' section of the LinkedIn profile to provide direct evidence of skills.",
+      "On GitHub, ensure the top 4-6 repositories are pinned to the profile and have comprehensive README files with setup instructions and usage examples."
+    ]
+  },
+  "final_assessment": {
+    "overall_score": "71.25%",
+    "recommendation": "Interview",
+    "rationale": "The candidate demonstrates exceptional backend skills (Node.js, MongoDB) and expert-level version control with Git, making them a very strong technical fit for the backend aspects of the role. However, there are two major concerns: a complete lack of experience with the required frontend framework, Angular, and an inability to verify their professional and educational background due to an inaccessible LinkedIn profile. An interview is recommended to assess their aptitude and willingness to learn Angular rapidly and to confirm their eligibility for the position.",
+    "key_decision_factors": {
+      "strengths": [
+        "Exceptional backend development skills in Node.js, Express.js, and MongoDB.",
+        "Expert-level proficiency in version control with Git.",
+        "Strong portfolio of complex full-stack projects demonstrating practical experience.",
+        "Demonstrated interest and skills in modern DevOps practices like Docker."
+      ],
+      "weaknesses": [
+        "Complete lack of experience with the required core frontend technology, Angular.",
+        "Inability to verify professional experience and required educational qualifications due to an inaccessible LinkedIn profile.",
+        "Weak professional online presence and branding outside of GitHub."
+      ]
+    }
+  }
+}

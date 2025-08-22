@@ -1,0 +1,107 @@
+{
+  "jd_criteria_summary": {
+    "required_skills": [
+      "Strong grasp of JavaScript, data structures & web technologies",
+      "Experience with at least one full stack project",
+      "Familiarity with MongoDB or similar NoSQL databases",
+      "Frontend: Angular"
+    ],
+    "preferred_skills": [
+      "Exposure to IoT, InfluxDB, Redis, or MQTT/Kafka",
+      "Experience with Docker, Git, or CI/CD",
+      "Interest in time-series data & cloud-native development"
+    ],
+    "experience": "The role requires an intern with full-stack project experience, specifically using Angular for the frontend, Node.js/Express for the backend, and a NoSQL database like MongoDB."
+  },
+  "github_profile_summary": {
+    "skills": [
+      "TypeScript",
+      "Go",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "NestJS",
+      "React",
+      "Next.js",
+      "MongoDB",
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "AWS"
+    ],
+    "projects": [
+      {
+        "name": "reserv",
+        "description": "A backend application built with NestJS (a progressive Node.js framework), demonstrating experience with TypeScript, microservice architecture, and Docker.",
+        "technologies": [
+          "TypeScript",
+          "NestJS",
+          "Node.js",
+          "Docker"
+        ]
+      },
+      {
+        "name": "node-rizz",
+        "description": "A full-stack application for low-code, AI-enhanced backend generation with a clear frontend/backend structure.",
+        "technologies": [
+          "TypeScript",
+          "Node.js"
+        ]
+      },
+      {
+        "name": "financepal",
+        "description": "A full-stack project with separate 'client' and 'server' directories, indicating experience building complete applications.",
+        "technologies": [
+          "JavaScript/TypeScript",
+          "Node.js"
+        ]
+      },
+      {
+        "name": "http-server-go",
+        "description": "A custom HTTP server built from scratch in Go, showcasing backend development fundamentals.",
+        "technologies": [
+          "Go"
+        ]
+      }
+    ]
+  },
+  "evaluation_table": [
+    {
+      "requirement": "Frontend (Angular)",
+      "candidate_evidence": "The candidate's profile and projects ('plannr') show experience with React and Next.js, but there is no evidence of experience with Angular.",
+      "match_status": "No Match"
+    },
+    {
+      "requirement": "Backend (Node.js, Express)",
+      "candidate_evidence": "The profile's tech stack lists Node.js and Express.js. The 'reserv' project uses NestJS, a popular Node.js framework, demonstrating strong backend skills.",
+      "match_status": "Strong Match"
+    },
+    {
+      "requirement": "Database (MongoDB)",
+      "candidate_evidence": "MongoDB is explicitly listed in the tech stack on the candidate's main profile page.",
+      "match_status": "Strong Match"
+    },
+    {
+      "requirement": "Full Stack Project Experience",
+      "candidate_evidence": "Multiple repositories like 'financepal' and 'node-rizz' are structured as full-stack projects.",
+      "match_status": "Strong Match"
+    },
+    {
+      "requirement": "Git Experience",
+      "candidate_evidence": "The candidate actively uses GitHub, has contribution-related achievements ('Pull Shark'), and lists Git in their tech stack.",
+      "match_status": "Strong Match"
+    },
+    {
+      "requirement": "Docker Experience",
+      "candidate_evidence": "Docker is listed in the tech stack, and the 'reserv' project includes a 'docker-compose.yaml' file, indicating practical experience.",
+      "match_status": "Strong Match"
+    },
+    {
+      "requirement": "InfluxDB, Redis, MQTT (IoT/Time-Series)",
+      "candidate_evidence": "There is no mention of or projects related to these specific IIoT or time-series technologies in the profile.",
+      "match_status": "No Match"
+    }
+  ],
+  "overall_match": "The candidate, Shreshth Verma, is a strong backend developer with proven experience in the required backend stack (Node.js, TypeScript, MongoDB) and preferred tools like Docker and Git. However, there are two significant gaps: 1) A critical mismatch in frontend technology, with the candidate showing experience in React while the role explicitly requires Angular. 2) A lack of demonstrated experience or interest in the job's specific domain of IIoT and time-series data (InfluxDB, Redis, MQTT). While the backend and DevOps skills are a great fit, the candidate does not meet the core frontend or domain-specific requirements for this particular role.",
+  "score": 4.5
+}

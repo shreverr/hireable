@@ -1,0 +1,235 @@
+{
+  "candidate_assessment_report": {
+    "jd_criteria_summary": {
+      "role_details": {
+        "title": "Full Stack Development Intern (IIoT & Data Analytics Platform)",
+        "duration": "12 months",
+        "type": "Paid Internship (with PPO pathway)",
+        "location": "Mumbai"
+      },
+      "qualifications": {
+        "education": "B.Tech 3rd year completed",
+        "majors": [
+          "CSE",
+          "related branches"
+        ]
+      },
+      "responsibilities": [
+        "Contribute to frontend (Angular) and backend (Node.js, Express) modules",
+        "Work with time-series data using InfluxDB and Redis",
+        "Build and integrate real-time APIs and data pipelines",
+        "Collaborate in sprint planning, code reviews & product discussions",
+        "Write clean, modular, and well-documented code"
+      ],
+      "required_skills": {
+        "technical": [
+          "Strong grasp of JavaScript",
+          "Data structures",
+          "Web technologies",
+          "Familiarity with MongoDB or similar NoSQL databases"
+        ],
+        "experience": [
+          "At least one full stack project"
+        ],
+        "soft_skills": [
+          "Quick learner",
+          "Passion for real-world tech challenges"
+        ]
+      },
+      "tech_stack": {
+        "frontend": [
+          "Angular",
+          "HTML/CSS",
+          "Charting Libraries"
+        ],
+        "backend": [
+          "Node.js",
+          "Express.js"
+        ],
+        "database": [
+          "MongoDB",
+          "InfluxDB (Time Series)",
+          "Redis"
+        ],
+        "other_tools": [
+          "MQTT/REST APIs",
+          "Git",
+          "Docker (optional exposure)"
+        ],
+        "deployment_ops": [
+          "CI/CD pipelines (exposure)",
+          "Cloud-native deployments (exposure)"
+        ]
+      },
+      "preferred_attributes": [
+        "Exposure to IoT, InfluxDB, Redis, or MQTT/Kafka",
+        "Experience with Docker, Git, or CI/CD",
+        "Interest in time-series data & cloud-native development"
+      ]
+    },
+    "github_profile_summary": {
+      "username": "Shivansh-Khunger",
+      "bio": "A Full-Stack Developer on the outside and a Dev-Ops enthusiast on the inside.",
+      "skills": [
+        "Full-Stack Development",
+        "DevOps",
+        "AI/ML",
+        "TypeScript",
+        "Go",
+        "C",
+        "Python",
+        "SQL",
+        "Next.js",
+        "Node.js",
+        "React",
+        "Docker",
+        "WebSockets",
+        "FastAPI",
+        "Cloudflare Workers",
+        "Reinforcement Learning",
+        "Deep Learning",
+        "NLP"
+      ],
+      "repositories": [
+        {
+          "name": "Encoder-Transformer-From-Scratch-in-C",
+          "description": "An implementation of the Transformer model from the 'Attention is All You Need' paper, built entirely from scratch in C, covering self-attention, positional encoding, and feed-forward networks.",
+          "technologies": [
+            "C",
+            "Deep Learning",
+            "NLP"
+          ],
+          "project_type": "AI/ML Implementation"
+        },
+        {
+          "name": "Code-Collab",
+          "description": "A real-time collaborative code editor for pair programming and group sessions, featuring live code sharing and multi-language support. Consists of a Next.js frontend and a Node.js backend with HTTP and WebSocket servers.",
+          "technologies": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Socket.io",
+            "Node.js",
+            "Docker"
+          ],
+          "project_type": "Full-Stack Web Application"
+        },
+        {
+          "name": "briefer",
+          "description": "A collaborative, Notion-like platform for creating data notebooks and dashboards using Python and SQL, featuring scheduling, native visualizations, and AI-powered code generation.",
+          "technologies": [
+            "Python",
+            "SQL",
+            "Next.js",
+            "Node.js",
+            "Docker"
+          ],
+          "project_type": "Data Analysis & BI Tool"
+        },
+        {
+          "name": "AI-Racer-Speed_-_Control",
+          "description": "A project to develop and train an AI agent for the CarRacing-v2 environment using reinforcement learning, specifically the Proximal Policy Optimization (PPO) algorithm, to optimize driving strategies.",
+          "technologies": [
+            "Python",
+            "Reinforcement Learning",
+            "PPO"
+          ],
+          "project_type": "AI/ML Simulation"
+        },
+        {
+          "name": "Grok-Code",
+          "description": "A conversational AI command-line interface (CLI) tool powered by the Grok model, designed for interacting with a codebase using natural language commands.",
+          "technologies": [
+            "Grok API",
+            "TypeScript",
+            "Node.js",
+            "CLI"
+          ],
+          "project_type": "AI Tool"
+        },
+        {
+          "name": "LoopAI-Assignment",
+          "description": "A data ingestion API system built with FastAPI for processing data IDs in batches, featuring priority queue handling and rate limiting.",
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "Docker"
+          ],
+          "project_type": "Backend API"
+        }
+      ]
+    },
+    "evaluation_table": [
+      {
+        "criterion": "Frontend Development (Angular)",
+        "score": 3,
+        "evidence": "The candidate's projects 'Code-Collab' and 'briefer' use Next.js and React for the frontend. There is no direct evidence of experience with Angular.",
+        "match_status": "Gap",
+        "comments": "The candidate is highly proficient in modern frontend development with React/Next.js, demonstrating the ability to build complex UIs. However, there is a direct gap in the required Angular framework."
+      },
+      {
+        "criterion": "Backend Development (Node.js, Express.js)",
+        "score": 9,
+        "evidence": "Multiple repositories ('Code-Collab', 'briefer', 'Grok-Code') utilize Node.js for the backend. The profile explicitly lists Node.js as a skill.",
+        "match_status": "Strong Match",
+        "comments": "The candidate demonstrates extensive and practical experience in building Node.js backends for full-stack applications and CLI tools."
+      },
+      {
+        "criterion": "Database Experience (MongoDB, InfluxDB, Redis)",
+        "score": 4,
+        "evidence": "The profile lists SQL as a skill, and the 'briefer' project appears to use a SQL database (PostgreSQL mentioned in architecture). There is no direct evidence of experience with MongoDB, InfluxDB, or Redis.",
+        "match_status": "Partial Match",
+        "comments": "The candidate has foundational database experience with SQL, but lacks specific experience with the NoSQL (MongoDB) and time-series (InfluxDB, Redis) databases required for this IIoT role."
+      },
+      {
+        "criterion": "Full Stack Project Experience",
+        "score": 10,
+        "evidence": "The candidate has at least two significant full-stack projects: 'Code-Collab' (real-time code editor) and 'briefer' (data notebook platform), both with distinct frontend and backend components.",
+        "match_status": "Strong Match",
+        "comments": "Exceeds the requirement of one full-stack project with multiple, complex, and well-documented applications."
+      },
+      {
+        "criterion": "JavaScript & Web Technologies",
+        "score": 10,
+        "evidence": "The candidate lists TypeScript (a superset of JavaScript) as a skill and uses it in projects like 'Code-Collab' and 'Grok-Code'. The use of Node.js, React, and WebSockets ('Code-Collab') demonstrates a strong command of web technologies.",
+        "match_status": "Strong Match",
+        "comments": "Demonstrates mastery of modern JavaScript (via TypeScript) and core web technologies essential for a full-stack role."
+      },
+      {
+        "criterion": "Git & Docker",
+        "score": 10,
+        "evidence": "The entire profile is on GitHub, showing proficiency with Git. Docker is listed as a skill and is used in multiple projects ('Code-Collab', 'briefer', 'LoopAI-Assignment'), with Dockerfiles and docker-compose files visible in the 'briefer' repository.",
+        "match_status": "Strong Match",
+        "comments": "Strong, practical evidence of using both Git for version control and Docker for containerization, aligning with preferred attributes."
+      },
+      {
+        "criterion": "API Development (REST/MQTT)",
+        "score": 8,
+        "evidence": "The 'LoopAI-Assignment' project is a data ingestion API. The 'Code-Collab' project uses WebSockets for real-time communication, which is conceptually similar to MQTT. The 'briefer' project architecture includes a dedicated Node.js API service.",
+        "match_status": "Match",
+        "comments": "Proven experience in building APIs and working with real-time communication protocols, which is a strong indicator of the ability to work with MQTT and REST APIs."
+      },
+      {
+        "criterion": "Preferred Attributes (IoT, Time-Series, Cloud-Native)",
+        "score": 6,
+        "evidence": "The bio 'Dev-Ops enthusiast' and extensive use of Docker align with cloud-native development. The 'briefer' project shows a strong interest in data analysis. However, there is no direct experience with IoT, InfluxDB, or Redis.",
+        "match_status": "Partial Match",
+        "comments": "Strong alignment with the DevOps and cloud-native aspects. The interest in data is clear, but the candidate lacks specific exposure to the IIoT and time-series technologies mentioned in the JD."
+      }
+    ],
+    "final_assessment": {
+      "overall_match_percentage": 75.0,
+      "key_strengths": [
+        "Exceptional backend development skills with Node.js, demonstrated across multiple complex projects.",
+        "Exceeds requirement for full-stack project experience with several well-documented, real-world applications.",
+        "Mastery of modern web technologies, including TypeScript, and strong practical experience with Git and Docker."
+      ],
+      "key_gaps": [
+        "No direct experience with the required Angular frontend framework; proficiency is in React/Next.js.",
+        "Significant gap in experience with the specified databases: MongoDB, and particularly the time-series databases InfluxDB and Redis.",
+        "Lack of direct exposure to IoT-specific protocols and technologies."
+      ],
+      "rationale": "The candidate is a highly capable full-stack developer with a strong foundation in backend development, DevOps practices, and complex project execution, resulting in a 75% match. While there are significant technology gaps in Angular and the specific time-series databases (InfluxDB, Redis) required for the IIoT domain, their demonstrated ability as a quick learner and success with diverse, challenging projects suggest a high potential to adapt and master the required stack."
+    }
+  }
+}

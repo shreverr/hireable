@@ -1,0 +1,67 @@
+{
+  "jd_criteria_summary": {
+    "role_title": "Full Stack Development Intern (IIoT & Data Analytics Platform)",
+    "key_requirements": [
+      "B.Tech in CSE or related field, having completed the 3rd year.",
+      "Experience with at least one full stack project.",
+      "Strong skills in JavaScript, data structures, and web technologies.",
+      "Frontend experience with Angular, HTML/CSS.",
+      "Backend experience with Node.js and Express.js.",
+      "Database knowledge including InfluxDB, Redis, and NoSQL (e.g., MongoDB).",
+      "Familiarity with MQTT/REST APIs and Git."
+    ],
+    "preferred_attributes": [
+      "Exposure to IoT, Docker, or CI/CD.",
+      "Interest in time-series data and cloud-native development."
+    ]
+  },
+  "linkedin_profile_summary": {
+    "error": "LinkedIn profile content is missing. Cannot generate summary."
+  },
+  "evaluation_table": [
+    {
+      "criterion": "Educational Qualification (B.Tech in CSE, 3rd year completed)",
+      "evidence_from_linkedin_profile": "Data not available due to missing LinkedIn profile.",
+      "score": "N/A"
+    },
+    {
+      "criterion": "Full Stack Project Experience",
+      "evidence_from_linkedin_profile": "Data not available due to missing LinkedIn profile.",
+      "score": "N/A"
+    },
+    {
+      "criterion": "Frontend Skills (Angular, HTML/CSS)",
+      "evidence_from_linkedin_profile": "Data not available due to missing LinkedIn profile.",
+      "score": "N/A"
+    },
+    {
+      "criterion": "Backend Skills (Node.js, Express.js)",
+      "evidence_from_linkedin_profile": "Data not available due to missing LinkedIn profile.",
+      "score": "N/A"
+    },
+    {
+      "criterion": "Database Skills (InfluxDB, Redis, NoSQL)",
+      "evidence_from_linkedin_profile": "Data not available due to missing LinkedIn profile.",
+      "score": "N/A"
+    },
+    {
+      "criterion": "API & Tools (MQTT/REST, Git)",
+      "evidence_from_linkedin_profile": "Data not available due to missing LinkedIn profile.",
+      "score": "N/A"
+    },
+    {
+      "criterion": "Preferred Attributes (IoT, Docker, CI/CD)",
+      "evidence_from_linkedin_profile": "Data not available due to missing LinkedIn profile.",
+      "score": "N/A"
+    }
+  ],
+  "experience_analysis": "Cannot perform experience analysis as LinkedIn profile content is missing.",
+  "professional_qualifications_assessment": "Cannot assess professional qualifications as LinkedIn profile content is missing.",
+  "overall_match_assessment": "An overall match assessment cannot be conducted because the LinkedIn profile content was not provided. The evaluation is entirely dependent on the candidate's profile data, which is unavailable.",
+  "recommendations": "No recommendations can be made. Please provide the LinkedIn profile content for a complete analysis.",
+  "final_score": {
+    "score": 0,
+    "match_percentage": 0,
+    "note": "Score is 0 as the candidate's profile could not be analyzed."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "evaluation_table": [
+    {
+      "criterion": "Data Structures & Algorithms (DSA) Foundation",
+      "jd_requirement": "Strong grasp of data structures is explicitly required.",
+      "score": 9,
+      "evidence": "The candidate has solved a substantial number of problems (440 total, 193 Medium, 25 Hard). Their strong areas include foundational topics like Array, String, Hash Table, and Sorting, which are critical for any development role. This volume and distribution indicate a very solid understanding of core DSA concepts.",
+      "weight": 30
+    },
+    {
+      "criterion": "Problem-Solving & Complexity Analysis",
+      "jd_requirement": "Role involves building scalable systems, requiring an understanding of performance and complexity.",
+      "score": 8,
+      "evidence": "Successfully solving 193 Medium and 25 Hard problems is a strong indicator of the ability to analyze time and space complexity (Big O notation). This skill is a prerequisite for designing efficient and scalable solutions, aligning well with the job's requirements.",
+      "weight": 25
+    },
+    {
+      "criterion": "Language Alignment",
+      "jd_requirement": "Strong grasp of JavaScript is required.",
+      "score": 1,
+      "evidence": "The LeetCode profile indicates primary proficiency in C++. There is no evidence of JavaScript usage for problem-solving. This represents a significant mismatch with a core technical requirement of the job description.",
+      "weight": 25
+    },
+    {
+      "criterion": "Algorithmic Specialization (Time-Series/Real-time)",
+      "jd_requirement": "Need for algorithms efficient for handling real-time, time-series data.",
+      "score": 5,
+      "evidence": "The candidate's strengths are in general-purpose DSA. While foundational, there is no direct evidence of expertise in specialized structures like Segment Trees (listed as a 'developing area') which are highly relevant for time-series range queries. The core skills are present, but the specialization is not yet developed.",
+      "weight": 10
+    },
+    {
+      "criterion": "Dedication and Learning Aptitude",
+      "jd_requirement": "A passion for solving real-world technical challenges is desired.",
+      "score": 10,
+      "evidence": "The profile shows a pattern of consistent and recent activity, with frequent high-submission days. This is an excellent proxy for dedication, persistence, and a strong work ethic, suggesting the candidate is a motivated and continuous learner.",
+      "weight": 10
+    }
+  ],
+  "algorithmic_assessment": {
+    "strengths": "The candidate possesses an exceptionally strong and well-practiced foundation in core data structures and algorithms, evidenced by the high volume of solved problems, particularly in the Medium difficulty range. Their consistent activity demonstrates a high level of motivation and dedication to skill improvement.",
+    "gaps": "The most critical gap is the lack of demonstrated proficiency in JavaScript, a primary requirement for the role. The candidate's LeetCode activity is in C++. Additionally, while their foundational skills are strong, they have not yet specialized in more advanced data structures (e.g., Segment Trees, advanced Graphs) that are particularly relevant to the IIoT and time-series data domain.",
+    "overall": "This is a candidate with a proven, high-caliber, language-agnostic problem-solving ability. Their logical reasoning and understanding of complexity are likely top-tier for an intern. However, the direct language and technology stack alignment is very low."
+  },
+  "overall_match": {
+    "percentage": 64.5,
+    "summary": "The candidate is a strong algorithmic thinker with a commendable work ethic but does not meet the core language requirement (JavaScript) based on the provided data. Their foundational skills are an excellent asset, but the significant gap in the required tech stack makes them a moderate match. Their success in the role would be contingent on their ability to rapidly transfer their C++-based knowledge to a JavaScript environment."
+  },
+  "recommendations": {
+    "for_candidate": "To better align with this role, focus on solving problems using JavaScript to demonstrate language proficiency. Supplement LeetCode practice by building a small full-stack project using Node.js and Angular to gain practical experience with the required frameworks. Prioritize learning about data structures like Heaps (Priority Queues) and Segment Trees, which are relevant for real-time and time-series data processing.",
+    "for_hiring_manager": "The candidate has a very strong problem-solving foundation and is highly motivated, making them a high-potential learner. It is recommended to conduct a technical screening to assess their fundamental JavaScript knowledge and their ability to articulate algorithmic concepts. If they demonstrate a basic grasp of JavaScript and a strong aptitude for learning, they could be a valuable hire despite the current gap on their profile."
+  },
+  "score": 6.45
+}

@@ -1,0 +1,67 @@
+{
+  "candidate_name": "Shreshth Verma",
+  "profile_url": "https://github.com/shreverr",
+  "overall_match_percentage": 64,
+  "criteria_analysis": [
+    {
+      "criterion": "Frontend: Angular, HTML/CSS, Charting Libraries",
+      "score": 2,
+      "evidence": "The profile lists React and Next.js in the tech stack, not the required Angular. The 'financepal' and 'plannr' repositories indicate frontend experience with React. There is no evidence of experience with Angular or specific charting libraries.",
+      "recommendation": "Candidate should highlight their React experience as a transferable skill and express willingness to learn Angular. Creating a small project with Angular would significantly strengthen their profile for this role."
+    },
+    {
+      "criterion": "Backend: Node.js, Express.js",
+      "score": 9,
+      "evidence": "The tech stack explicitly lists NodeJS and Express.js. The 'node-rizz' and 'reserv' (which uses NestJS, a Node.js framework) repositories demonstrate strong backend experience. The 'financepal' project also contains a server-side component.",
+      "recommendation": "This is a major strength. The candidate should emphasize their project experience with the Node.js ecosystem during interviews."
+    },
+    {
+      "criterion": "Databases: MongoDB (or similar NoSQL), InfluxDB, Redis",
+      "score": 6,
+      "evidence": "MongoDB is explicitly listed in the tech stack badges, meeting the core NoSQL requirement. However, there is no direct evidence of experience with InfluxDB or Redis.",
+      "recommendation": "Highlight the strong MongoDB experience. The lack of InfluxDB/Redis experience is a minor gap but should be addressed by showing an eagerness to learn technologies for time-series data."
+    },
+    {
+      "criterion": "Core Skills: Strong grasp of JavaScript, data structures, and web technologies.",
+      "score": 8,
+      "evidence": "The profile shows extensive use of JavaScript and TypeScript across multiple projects ('node-rizz', 'reserv', 'financepal'). The bio states a focus on TypeScript. This demonstrates a strong foundation in JS and web technologies like REST APIs.",
+      "recommendation": "The candidate's proficiency in both JavaScript and TypeScript is a significant asset and should be emphasized."
+    },
+    {
+      "criterion": "Other Tools: MQTT/REST APIs, Git",
+      "score": 8,
+      "evidence": "Git is listed as a skill, and the profile's existence and activity (e.g., 'Pull Shark' achievement) confirm its use. Multiple backend projects are centered around building APIs, implying strong experience with REST APIs. There is no mention of MQTT.",
+      "recommendation": "The candidate has strong, demonstrable experience in Git and REST APIs. The absence of MQTT is a gap for preferred IoT exposure but not a core requirement."
+    },
+    {
+      "criterion": "Project Experience: Must have completed at least one full-stack project.",
+      "score": 9,
+      "evidence": "The 'financepal' and 'node-rizz' repositories both have distinct frontend/client and backend/server directories, clearly indicating full-stack project experience. This fulfills the requirement.",
+      "recommendation": "The candidate should be prepared to discuss the architecture and their contributions to these full-stack projects in detail."
+    },
+    {
+      "criterion": "Preferred Attributes: Exposure to IoT, InfluxDB, Redis, or MQTT/Kafka. Experience with Docker, Git, or CI/CD. Interest in time-series data and cloud-native development.",
+      "score": 6,
+      "evidence": "The profile shows strong alignment with some preferred attributes: Docker and Kubernetes are listed in the tech stack, and the bio mentions 'currently learning Kubernetes,' indicating interest in cloud-native development. Git experience is evident. However, there is no evidence of exposure to IoT, InfluxDB, Redis, or MQTT/Kafka.",
+      "recommendation": "Emphasize the existing experience with Docker and the proactive learning of Kubernetes as strong indicators of being a good fit for a cloud-native environment."
+    }
+  ],
+  "strengths": [
+    "Strong backend development skills with Node.js, Express.js (via NestJS), and TypeScript.",
+    "Demonstrable experience with MongoDB, a required NoSQL database.",
+    "Proven experience in building full-stack applications ('financepal', 'node-rizz').",
+    "Proficient with essential tools like Git and REST API development.",
+    "Shows initiative and interest in preferred cloud-native technologies like Docker and Kubernetes."
+  ],
+  "gaps": [
+    "No demonstrated experience with the required frontend framework, Angular. The candidate's experience is with React.",
+    "Lacks experience with the specified time-series database (InfluxDB) and in-memory data store (Redis).",
+    "No mention of IoT-specific technologies like MQTT."
+  ],
+  "recommendations": [
+    "The hiring manager should assess if the candidate's React experience is an acceptable substitute for Angular and evaluate their ability to learn new technologies quickly.",
+    "The candidate should add detailed READMEs to their projects, explicitly listing the technologies and architecture used.",
+    "To better align with the role, the candidate could create a small project demonstrating skills in Angular or with a time-series database like InfluxDB."
+  ],
+  "summary": "Shreshth Verma is a strong backend-focused candidate whose skills in Node.js, TypeScript, MongoDB, and Docker align well with the job description's core requirements and preferred attributes. He has proven full-stack project experience. The most significant gap is the lack of experience in Angular, as his frontend expertise is in React. While he also lacks exposure to some preferred tools like InfluxDB and MQTT, his solid foundation and demonstrated interest in learning modern technologies like Kubernetes make him a promising candidate for the internship."
+}
