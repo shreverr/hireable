@@ -1,0 +1,135 @@
+{
+  "jd_criteria_summary": {
+    "title": "Full Stack Development Intern",
+    "key_technologies": [
+      "Angular",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "InfluxDB",
+      "Redis",
+      "MQTT/REST APIs",
+      "Git"
+    ],
+    "experience": "At least one full stack project, suitable for a 3rd-year B.Tech student.",
+    "focus": "Emphasis on both frontend and backend development, with a special focus on time-series data, real-time APIs, and cloud-native technologies."
+  },
+  "candidate_profile_summary": {
+    "github_user": "shreverr",
+    "description": "The candidate presents as a backend-focused developer with primary skills in TypeScript and Golang. The profile lists experience with Node.js, Express.js, MongoDB, React, Docker, and Git. There are several repositories demonstrating full-stack and backend development capabilities, including 'financepal' (client/server structure), 'reserv' (NestJS backend), and 'node-rizz' (low-code backend generator).",
+    "projects": [
+      {
+        "name": "financepal",
+        "description": "Appears to be a full-stack project with 'client' and 'server' directories, suggesting experience in building complete applications."
+      },
+      {
+        "name": "reserv",
+        "description": "A backend project using NestJS, a Node.js framework. It includes a 'docker-compose.yaml' file, indicating experience with Docker."
+      },
+      {
+        "name": "node-rizz",
+        "description": "A full-stack project described as a low-code backend generator, with 'frontend' and 'backend' directories."
+      },
+      {
+        "name": "plannr",
+        "description": "A frontend project built with React, TypeScript, and Vite, demonstrating frontend development skills, though not in the required framework (Angular)."
+      }
+    ]
+  },
+  "alignment_scores": [
+    {
+      "criterion": "Angular",
+      "score": 0,
+      "evidence": "No evidence of Angular was found. The candidate's main frontend project, 'plannr', uses React and Vite."
+    },
+    {
+      "criterion": "HTML/CSS",
+      "score": 6,
+      "evidence": "Multiple projects ('plannr', 'financepal', 'node-rizz') have frontend components, which implies proficiency in HTML/CSS. However, no specific code is visible to assess the quality."
+    },
+    {
+      "criterion": "Charting Libraries",
+      "score": 0,
+      "evidence": "No evidence of using any charting libraries was found in the repositories."
+    },
+    {
+      "criterion": "Node.js",
+      "score": 9,
+      "evidence": "The candidate's profile explicitly lists NodeJS. Multiple repositories like 'reserv' (NestJS), 'financepal', and 'node-rizz' are clear evidence of strong Node.js experience."
+    },
+    {
+      "criterion": "Express.js",
+      "score": 8,
+      "evidence": "The profile lists Express.js in the tech stack. The 'reserv' project uses NestJS, which is built on top of Express, demonstrating familiarity with the ecosystem."
+    },
+    {
+      "criterion": "MongoDB",
+      "score": 8,
+      "evidence": "MongoDB is explicitly listed in the candidate's tech stack on their profile README, indicating direct experience."
+    },
+    {
+      "criterion": "InfluxDB",
+      "score": 0,
+      "evidence": "There is no mention or evidence of InfluxDB usage in the profile or projects."
+    },
+    {
+      "criterion": "Redis",
+      "score": 0,
+      "evidence": "There is no mention or evidence of Redis usage in the profile or projects."
+    },
+    {
+      "criterion": "JavaScript/TypeScript",
+      "score": 9,
+      "evidence": "The candidate's profile states they primarily work with TypeScript. Multiple projects ('reserv', 'plannr', 'node-rizz') confirm strong proficiency."
+    },
+    {
+      "criterion": "REST APIs",
+      "score": 8,
+      "evidence": "The 'reserv' (NestJS) and 'http-server-go' projects are direct evidence of experience in building and handling APIs. This is a core strength."
+    },
+    {
+      "criterion": "Git",
+      "score": 10,
+      "evidence": "The candidate maintains an active GitHub profile with multiple repositories, commits, and clear project structures, demonstrating excellent proficiency with Git."
+    },
+    {
+      "criterion": "Full Stack Project Experience",
+      "score": 9,
+      "evidence": "The candidate has at least two projects ('financepal', 'node-rizz') with clear frontend and backend separation, fulfilling this requirement."
+    },
+    {
+      "criterion": "Preferred: Docker",
+      "score": 8,
+      "evidence": "Docker is listed on the profile, and the 'reserv' repository contains a 'docker-compose.yaml' file, providing concrete evidence of experience."
+    },
+    {
+      "criterion": "Preferred: IoT/Time-Series Tech (InfluxDB, Redis, MQTT)",
+      "score": 1,
+      "evidence": "No evidence of experience with these specific technologies. The low score reflects a major gap in this preferred area."
+    }
+  ],
+  "strengths": [
+    "Strong backend development skills with Node.js, NestJS, and TypeScript.",
+    "Proven experience in building and managing REST APIs.",
+    "Demonstrated proficiency with Git and version control.",
+    "Experience with full-stack application architecture ('financepal', 'node-rizz').",
+    "Familiarity with containerization using Docker."
+  ],
+  "gaps": [
+    "Significant frontend technology mismatch; the job requires Angular, while the candidate's experience is in React.",
+    "No demonstrated experience with the required time-series databases (InfluxDB) or caching systems (Redis).",
+    "Lack of experience with IoT-related protocols like MQTT.",
+    "No evidence of using charting libraries for data visualization."
+  ],
+  "recommendations": {
+    "overall": "The candidate is a strong backend fit but a weak frontend and specialized-database fit for this specific role. Their Node.js, API, and Docker skills are well-aligned, but the lack of Angular and time-series database experience are critical gaps.",
+    "interview_questions": [
+      "Given that your experience is in React, how would you approach learning Angular for this role? Can you describe a time you had to learn a new framework quickly?",
+      "This role involves working with time-series data. While you may not have used InfluxDB, can you discuss how you would approach designing a system to handle high-frequency data from IoT devices?",
+      "Can you walk me through the architecture of your 'financepal' or 'node-rizz' project, explaining the communication between the frontend and backend?"
+    ]
+  },
+  "score": {
+    "overall_match_percentage": 58
+  }
+}

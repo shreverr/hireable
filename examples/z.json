@@ -1,0 +1,107 @@
+{
+  "jd_criteria_summary": {
+    "title": "Full Stack Development Intern (IIoT & Data Analytics Platform)",
+    "required_stack": {
+      "frontend": "Angular, HTML/CSS",
+      "backend": "Node.js, Express.js",
+      "databases": "MongoDB, InfluxDB, Redis",
+      "languages": "JavaScript",
+      "tools": "Git, REST APIs"
+    },
+    "experience": "Must have at least one full stack project.",
+    "preferred_skills": "Exposure to IoT, InfluxDB, Redis, MQTT/Kafka, Docker, CI/CD."
+  },
+  "github_profile_summary": {
+    "username": "shreverr",
+    "bio": "A backend developer primarily working with TypeScript and Golang, currently learning Kubernetes.",
+    "self_reported_stack": [
+      "Go",
+      "JavaScript",
+      "TypeScript",
+      "Express.js",
+      "MongoDB",
+      "AWS",
+      "Next JS",
+      "NodeJS",
+      "React",
+      "Git",
+      "Kubernetes",
+      "Docker"
+    ],
+    "key_repositories": [
+      {
+        "name": "reserv",
+        "description": "A NestJS (Node.js framework) project that includes a `docker-compose.yaml`, indicating Docker usage."
+      },
+      {
+        "name": "financepal",
+        "description": "A full stack project with separate 'client' and 'server' directories."
+      },
+      {
+        "name": "node-rizz",
+        "description": "A full stack project described as a 'low code backend generator' with 'frontend' and 'backend' directories."
+      },
+      {
+        "name": "plannr",
+        "description": "A frontend project using React, TypeScript, and Vite."
+      }
+    ]
+  },
+  "evaluation_table": [
+    {
+      "criterion": "Frontend Development (Angular)",
+      "score": 2,
+      "evidence": "The candidate's profile and projects show experience with React ('plannr' repository, 'React' and 'Next JS' badges) but there is no evidence of experience with Angular, which is a required skill.",
+      "match_status": "Gap"
+    },
+    {
+      "criterion": "Backend Development (Node.js, Express)",
+      "score": 9,
+      "evidence": "The profile README explicitly lists Node.js and Express.js. The 'reserv' repository is built with NestJS, a popular Node.js framework. This demonstrates strong alignment.",
+      "match_status": "Strong Match"
+    },
+    {
+      "criterion": "JavaScript/TypeScript Proficiency",
+      "score": 9,
+      "evidence": "The candidate lists both JavaScript and TypeScript in their tech stack. Multiple repositories ('reserv', 'plannr', 'financepal') utilize these languages, indicating strong proficiency.",
+      "match_status": "Strong Match"
+    },
+    {
+      "criterion": "Full Stack Project Experience",
+      "score": 10,
+      "evidence": "The profile contains multiple repositories structured as full stack applications, such as 'financepal' and 'node-rizz', which have separate client/server or frontend/backend folders. This directly meets the requirement.",
+      "match_status": "Strong Match"
+    },
+    {
+      "criterion": "NoSQL Database (MongoDB)",
+      "score": 8,
+      "evidence": "MongoDB is listed as a skill in the profile's tech stack badges. This indicates familiarity as required by the job description.",
+      "match_status": "Match"
+    },
+    {
+      "criterion": "Git Usage",
+      "score": 10,
+      "evidence": "The candidate's profile is hosted on GitHub and features multiple repositories with commit histories. A 'Git' badge is also present. This demonstrates clear proficiency.",
+      "match_status": "Strong Match"
+    },
+    {
+      "criterion": "Preferred: IIoT & Time-Series (InfluxDB, Redis)",
+      "score": 1,
+      "evidence": "There is no mention or evidence of experience with InfluxDB, Redis, MQTT, or other IoT-related technologies in the crawled profile data. This is a gap for the preferred attributes.",
+      "match_status": "Gap"
+    },
+    {
+      "criterion": "Preferred: DevOps (Docker)",
+      "score": 7,
+      "evidence": "The candidate lists Docker and Kubernetes in their tech stack. The 'reserv' repository contains a `docker-compose.yaml` file, providing concrete evidence of Docker experience.",
+      "match_status": "Match"
+    }
+  ],
+  "overall_match": {
+    "strengths": "The candidate has a strong backend foundation in Node.js (NestJS) and TypeScript, which aligns perfectly with the core backend requirements. They have proven full-stack project experience and familiarity with essential tools like Git, MongoDB, and Docker.",
+    "gaps": "The most significant gap is the lack of demonstrated experience with Angular, the specified frontend framework. The candidate's experience is with React. Additionally, there is no evidence of exposure to the preferred IIoT and time-series technologies like InfluxDB or Redis.",
+    "overall_percentage": 70
+  },
+  "recommendations": "The candidate is a strong backend fit but a weak frontend fit due to the Angular requirement. If their backend skills and ability to learn quickly are highly valued, they could be a good candidate. It is recommended to discuss their willingness and capacity to learn Angular rapidly. The lack of IIoT-specific experience should be noted, as this is a preferred but not a required skill.",
+  "score": 70
+}

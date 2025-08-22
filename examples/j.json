@@ -1,0 +1,113 @@
+{
+  "jd_criteria_summary": {
+    "title": "Full-Stack Developer Intern",
+    "key_requirements": {
+      "skills_technologies": "JavaScript, Angular, HTML/CSS, Node.js, Express.js, MongoDB (or NoSQL), InfluxDB, Redis, MQTT, REST APIs, Git.",
+      "experience": "B.Tech 3rd year completed, at least one full-stack project.",
+      "qualifications": "Quick learner, writes clean, modular, and well-documented code.",
+      "preferred": "Exposure to IoT, InfluxDB, Redis, MQTT/Kafka, Docker, CI/CD, and interest in time-series data."
+    }
+  },
+  "github_profile_summary": {
+    "username": "Shivansh-Khunger",
+    "bio": "A Full-Stack Developer on the outside and a Dev-Ops enthusiast on the inside.",
+    "key_projects": [
+      {
+        "name": "alfa-leetcode-api",
+        "description": "A custom REST API for LeetCode statistics, built with Node.js, Express.js, and TypeScript. Includes Docker support.",
+        "tech": ["Node.js", "Express.js", "TypeScript", "REST API", "Docker"]
+      },
+      {
+        "name": "Code-Collab",
+        "description": "A full-stack collaborative coding platform with a Next.js frontend and a Node.js backend.",
+        "tech": ["Next.js", "TypeScript", "Node.js", "WebSockets"]
+      },
+      {
+        "name": "nitro",
+        "description": "A scaffolding tool for Node.js APIs, demonstrating an interest in developer tooling and automation.",
+        "tech": ["Node.js", "TypeScript", "CLI"]
+      },
+      {
+        "name": "Encoder-Transformer-From-Scratch-in-C",
+        "description": "An implementation of a Transformer model in C, showcasing strong foundational knowledge of algorithms and low-level programming.",
+        "tech": ["C", "AI/ML"]
+      }
+    ],
+    "overall_impression": "The candidate presents as a strong backend-focused developer with extensive experience in the Node.js and TypeScript ecosystem. The profile showcases a variety of projects, from practical APIs and full-stack applications to complex AI/ML implementations, indicating a versatile and passionate learner. There is clear evidence of experience with Docker and some exposure to CI/CD."
+  },
+  "evaluation_table": [
+    {
+      "criterion": "Core: JavaScript, data structures, web technologies",
+      "score": 9,
+      "evidence": "Numerous projects built with TypeScript/JavaScript ('alfa-leetcode-api', 'Code-Collab', 'nitro'). The 'Encoder-Transformer-From-Scratch-in-C' project suggests a deep understanding of complex algorithms and data structures.",
+      "comments": "Excellent command of modern JavaScript/TypeScript and core web concepts. The C project is a strong indicator of solid computer science fundamentals."
+    },
+    {
+      "criterion": "Frontend: Angular, HTML/CSS, Charting Libraries",
+      "score": 3,
+      "evidence": "Projects like 'Spotify-Clone' and 'datagenie.ai-clone' show proficiency in HTML/CSS and frontend development using React/Next.js.",
+      "comments": "Significant gap. There is no evidence of experience with Angular, which is a required skill. No charting libraries are showcased. The candidate's frontend experience is in a different ecosystem (React)."
+    },
+    {
+      "criterion": "Backend: Node.js, Express.js",
+      "score": 9,
+      "evidence": "Multiple projects such as 'alfa-leetcode-api', 'Code-Collab-Backend', and 'Bajaj-Assignment' are explicitly built using Node.js and Express.js.",
+      "comments": "This is a core strength. The candidate has proven, practical experience in building backend services with the required technologies."
+    },
+    {
+      "criterion": "Databases: MongoDB (or similar NoSQL), InfluxDB, Redis",
+      "score": 2,
+      "evidence": "No direct evidence of using MongoDB, InfluxDB, or Redis in the provided repository content. Full-stack projects imply database usage, but the specific technologies are not mentioned or demonstrated.",
+      "comments": "Major gap. The profile fails to provide any evidence for the required database technologies, which is critical for the role's responsibilities."
+    },
+    {
+      "criterion": "APIs/Protocols: MQTT, REST APIs",
+      "score": 8,
+      "evidence": "The 'alfa-leetcode-api' project is an excellent example of designing, building, and documenting a REST API. Several other projects are API-based.",
+      "comments": "Strong proficiency in REST API development. However, there is no evidence of experience with MQTT, which is a preferred protocol."
+    },
+    {
+      "criterion": "Version Control: Git",
+      "score": 10,
+      "evidence": "The entire profile is on GitHub, with 30+ repositories showing consistent commit history and project management.",
+      "comments": "Expert-level use of Git and GitHub is clearly demonstrated."
+    },
+    {
+      "criterion": "Project Experience: At least one full-stack project",
+      "score": 10,
+      "evidence": "The candidate has completed multiple full-stack projects, including 'Code-Collab' (frontend + backend), 'therapy.ai', and 'Zeotap-Assignment-2'.",
+      "comments": "Requirement fully met with multiple examples of full-stack development."
+    },
+    {
+      "criterion": "Qualifications: Quick learner, clean/modular code",
+      "score": 8,
+      "evidence": "The diverse range of projects (web dev, CLI tools, AI/ML in C and Python) demonstrates a strong passion for technology and an ability to learn new domains. Project structures appear organized, and the use of TypeScript promotes cleaner code.",
+      "comments": "The candidate's profile strongly suggests they are a quick and motivated learner. Code quality appears to be a focus."
+    },
+    {
+      "criterion": "Preferred Attributes: IoT, InfluxDB, Redis, MQTT, Docker, CI/CD",
+      "score": 6,
+      "evidence": "Dockerfiles are present in 'alfa-leetcode-api', 'Code-Collab-Backend', 'Bajaj-Assignment', and others. Some repositories contain '.github/workflows' indicating CI/CD exposure.",
+      "comments": "Strong alignment with Docker. Some familiarity with CI/CD. However, there is no evidence for the other preferred attributes like IoT, InfluxDB, Redis, or MQTT."
+    }
+  ],
+  "overall_match": {
+    "percentage": "68%",
+    "rationale": "The candidate is an excellent fit for the backend aspects of the role, demonstrating strong skills in Node.js, Express.js, TypeScript, and REST APIs. They also show proficiency with preferred tools like Docker and have the required full-stack project experience. However, the overall match is significantly lowered by critical gaps in the required frontend framework (Angular) and specific database technologies (MongoDB, InfluxDB, Redis). The profile is heavily skewed towards the React ecosystem and does not show experience with time-series data or IoT protocols."
+  },
+  "recommendations": {
+    "strengths": [
+      "Exceptional backend development skills with Node.js, Express.js, and TypeScript.",
+      "Proven ability to build and document robust REST APIs.",
+      "Strong practical experience with Docker for containerization.",
+      "Demonstrates a versatile skill set and a passion for learning complex topics (e.g., AI/ML in C)."
+    ],
+    "gaps": [
+      "No demonstrated experience with Angular, a required frontend technology.",
+      "Lack of evidence for using required databases like MongoDB, InfluxDB, or Redis.",
+      "No exposure to IoT protocols (MQTT) or time-series data handling, which are preferred attributes."
+    ],
+    "final_recommendation": "The candidate is a high-potential developer with a very strong backend foundation. If the team is willing to be flexible on the frontend framework or invest in training for Angular and the specific database stack, he could be a valuable asset. The interview process should focus heavily on assessing his database knowledge and willingness to learn Angular quickly. He is a strong 'maybe' contingent on flexibility with the tech stack."
+  },
+  "score": 6.8
+}

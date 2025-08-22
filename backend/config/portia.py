@@ -9,5 +9,5 @@ load_dotenv()
 GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 
 config = Config.from_default(llm_provider=LLMProvider.GOOGLE,
-                             default_model="google/gemini-2.5-flash",
+                             default_model="google/gemini-2.5-pro",
                              google_api_key=GOOGLE_API_KEY)

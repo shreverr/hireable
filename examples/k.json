@@ -1,0 +1,63 @@
+{
+  "candidateProfile": {
+    "name": "Shreshth Verma",
+    "github_url": "https://github.com/shreverr"
+  },
+  "evaluation": [
+    {
+      "criterion": "Frontend Development (Angular)",
+      "score": 2,
+      "evidence": "The job description explicitly requires Angular. The candidate's profile lists React and Next.js in the tech stack and has projects like 'clicktoclass' and 'cryptrack' built with them. While this demonstrates frontend capability, there is no direct evidence of Angular experience, which is a significant gap."
+    },
+    {
+      "criterion": "Backend Development (Node.js, Express.js)",
+      "score": 9,
+      "evidence": "The profile's tech stack explicitly lists NodeJS and Express.js. Several repositories like 'homevue', 'node-rizz', and 'financepal' have dedicated 'server' or 'backend' folders, indicating strong, practical experience with the required backend technologies."
+    },
+    {
+      "criterion": "Database Experience (MongoDB, InfluxDB, Redis)",
+      "score": 6,
+      "evidence": "MongoDB is listed in the tech stack, fulfilling a key requirement. However, there is no direct evidence of experience with the time-series specific databases InfluxDB and Redis, which are central to the IIoT responsibilities of the role."
+    },
+    {
+      "criterion": "APIs & Tools (MQTT/REST, Git)",
+      "score": 8,
+      "evidence": "Git is listed as a skill and is inherently used for managing the profile. The 'Homie' project, with its 'client', 'server', and 'firmware' structure, strongly suggests an IoT application, which typically relies on MQTT or REST APIs for communication. Contributions to 'Panora' (a unified API platform) also indicate API integration experience."
+    },
+    {
+      "criterion": "Full-Stack Project Experience",
+      "score": 10,
+      "evidence": "The candidate has multiple projects that appear to be full-stack, including 'node-rizz', 'financepal', and 'Homie', each containing separate client/frontend and server/backend components. This meets the requirement of having at least one full-stack project."
+    },
+    {
+      "criterion": "JavaScript/TypeScript Fundamentals",
+      "score": 9,
+      "evidence": "The profile bio states, 'I majorly work with Typescript and Golang'. The tech stack lists both JavaScript and TypeScript, and numerous repositories ('node-rizz', 'grizzly', 'clicktoclass') are built using these languages, demonstrating strong proficiency."
+    },
+    {
+      "criterion": "Preferred Attributes (IoT, Docker, Cloud-Native)",
+      "score": 9,
+      "evidence": "The candidate shows excellent alignment with preferred attributes. The 'Homie' project points to IoT experience. Docker and Kubernetes are listed in the tech stack. Contributions to cloud-native projects like 'harbor' and 'meshery' demonstrate a clear interest and engagement in this area."
+    }
+  ],
+  "summary": {
+    "overall_match_percentage": 76,
+    "strengths": [
+      "Strong backend development skills with Node.js, Express, and TypeScript.",
+      "Proven experience in building and managing full-stack projects.",
+      "Excellent alignment with 'preferred' attributes, showing clear interest and experience in IoT, Docker, and Cloud-Native technologies.",
+      "Proficient with Git and familiar with MongoDB."
+    ],
+    "gaps": [
+      "Major Gap: No demonstrated experience with Angular, the required frontend framework. The candidate's experience is in React/Next.js.",
+      "Key Technology Gap: No evidence of experience with InfluxDB or Redis, which are core to the time-series data responsibilities of the role.",
+      "No explicit mention of working with charting libraries on the frontend."
+    ]
+  },
+  "recommendations": [
+    "The candidate is a strong backend fit with a significant frontend framework mismatch. He should be questioned on his ability and willingness to learn Angular quickly.",
+    "To strengthen the application, the candidate should create a small project using InfluxDB or Redis to demonstrate familiarity with time-series databases.",
+    "The README for the 'Homie' project should be updated to explicitly detail the technologies and protocols (e.g., MQTT) used to make the IoT experience more visible.",
+    "The profile's bio could be tailored to mention an interest in IIoT and data analytics to align more directly with the job description."
+  ]
+}

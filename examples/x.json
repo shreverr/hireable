@@ -1,0 +1,22 @@
+{
+  "github": {
+    "url": "https://github.com/vinayak25",
+    "status": "found"
+  },
+  "twitter": {
+    "url": "https://twitter.com/vinayak2506",
+    "status": "found"
+  },
+  "linkedin": {
+    "url": "https://in.linkedin.com/in/vinayak-sarawagi",
+    "status": "found"
+  },
+  "leetcode": {
+    "url": null,
+    "status": "not_found"
+  },
+  "resume": {
+    "url": "https://vinayaksarawagi.com/",
+    "status": "found"
+  }
+}

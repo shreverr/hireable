@@ -1,0 +1,52 @@
+{
+  "jd_criteria_summary": "The company is seeking a Full Stack Development Intern for a 12-month role in Mumbai. The ideal candidate is a 3rd-year B.Tech CSE student with skills in Angular, Node.js, Express, MongoDB, InfluxDB, and Redis. Responsibilities include frontend and backend development for an IIoT & Data Analytics platform, working with time-series data, and building APIs. Experience with a full stack project and Git is required. Exposure to IoT, MQTT, Docker, and CI/CD is a plus.",
+  "github_profile_summary": "The GitHub profile for ShivamBajpai04 showcases a developer with skills in JavaScript, C++, and Python. The profile's README lists a tech stack including Node.js, Express.js, React, Next.js, and MongoDB. The most significant project is 'Wordle-Square-Cheat-Tool', a full-stack application with a Node.js/Express backend server, a C++ solver, and a Chrome extension frontend. Other repositories contain coursework in C++ (OOPs_Class) and simple static websites, demonstrating foundational knowledge and version control usage.",
+  "evaluation_table": [
+    {
+      "criterion": "Frontend: Angular",
+      "score": 2,
+      "evidence": "The profile shows experience with other modern frontend frameworks like React and Next.js (listed in the profile README) but there is no evidence of any projects or skills related to Angular. The score reflects transferable JavaScript knowledge but a direct gap in the required technology."
+    },
+    {
+      "criterion": "Backend: Node.js, Express.js",
+      "score": 9,
+      "evidence": "The profile README explicitly lists Node.js and Express.js in the tech stack. More importantly, the 'Wordle-Square-Cheat-Tool' project contains a '/server' directory with an 'index.js' file, which is described as an 'Express server implementation'. This provides concrete evidence of practical experience."
+    },
+    {
+      "criterion": "Databases: MongoDB, InfluxDB, Redis",
+      "score": 5,
+      "evidence": "The profile README includes a badge for MongoDB, indicating familiarity. However, there is no mention or evidence of experience with the other required databases, InfluxDB and Redis, which are critical for the IIoT and time-series aspects of the role."
+    },
+    {
+      "criterion": "JavaScript & Data Structures",
+      "score": 8,
+      "evidence": "Strong JavaScript skills are implied through the use of Node.js, Express, and React. The 'OOPs_Class' repository, though in C++, contains numerous files on fundamental concepts like stacks, queues, and various algorithms, demonstrating a solid understanding of data structures."
+    },
+    {
+      "criterion": "Full Stack Project Experience",
+      "score": 10,
+      "evidence": "The 'Wordle-Square-Cheat-Tool' is a clear and complete full-stack project. It integrates a backend (Node.js/Express server), a frontend (Chrome extension), and a separate logic component (C++ solver), demonstrating the ability to build and connect different parts of an application."
+    },
+    {
+      "criterion": "APIs/Protocols: REST APIs, MQTT",
+      "score": 7,
+      "evidence": "The 'Wordle-Square-Cheat-Tool' project README describes a 'POST /solve' API endpoint, showing practical experience with creating and documenting REST APIs. There is no evidence of experience with MQTT."
+    },
+    {
+      "criterion": "Tools: Git",
+      "score": 10,
+      "evidence": "The candidate actively uses GitHub for version control across multiple repositories. The 'Wordle-Square-Cheat-Tool' project has 59 commits, and 'OOPs_Class' has 17 commits, demonstrating proficiency with Git workflows."
+    },
+    {
+      "criterion": "Preferred: IoT, InfluxDB, Redis, MQTT, Docker",
+      "score": 1,
+      "evidence": "There is no evidence of exposure to any of the preferred technologies like IoT, InfluxDB, Redis, MQTT, or Docker. The profile is focused on general web development rather than the specific IIoT domain."
+    }
+  ],
+  "overall_match": {
+    "strengths": "The candidate has proven full-stack project experience with the required backend stack (Node.js, Express.js). They possess a strong foundation in data structures, algorithms, and version control (Git). Their familiarity with MongoDB and REST APIs is also a direct match.",
+    "gaps": "The most significant gap is the lack of experience with Angular, the required frontend framework. Furthermore, the candidate shows no exposure to the core IIoT technologies mentioned in the job description, such as InfluxDB, Redis, and MQTT, which are critical for the role's domain."
+  },
+  "recommendations": "The candidate is a strong generalist full-stack developer but is not a specialized fit for the IIoT domain of this role. They would be a good fit if the company is willing to train them on Angular and the specific time-series/IoT tech stack. To improve their candidacy, the candidate should create a small project using Angular and research IIoT protocols and databases to demonstrate a proactive learning attitude.",
+  "score": 65
+}

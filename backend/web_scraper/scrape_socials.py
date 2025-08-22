@@ -208,6 +208,8 @@ Direct extraction first: Always check the provided URLs thoroughly before using 
 Validate links: Briefly visit discovered links to confirm they're active and belong to the right person
 Be thorough: Check multiple sections of each webpage (header, footer, about, contact, etc.)
 Cross-reference: Use information from multiple sources to verify identity consistency
+Don't use web_search tool before crawling first, if any links are not found then
+resolve to web_search tool
 
 If a link cannot be found after exhaustive analysis, mark it as "Not found" with a brief explanation of what was checked.
     """
