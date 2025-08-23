@@ -1,28 +1,52 @@
+from fastapi import FastAPI, HTTPException
 from web_scraper.scrape_socials import scrapeSocials
-from web_scraper.evaluate_platforms import evaluate_platform
-from models.user import User
+from models.job import Job, JobRequest
 from config.db import connectDb
-from dotenv import load_dotenv
-load_dotenv()
+from bson import ObjectId
+from bson.errors import InvalidId
 
+app = FastAPI()
+
+# Connect to database
 connectDb()
 
-# Example usage with only some optional fields provided
-# scraped_social = scrapeSocials(
-#     userId="demo-user-id",
-#     data={
-#         # "resume_url": "https://res.cloudinary.com/dpf6c8boe/image/upload/v1755758537/ShreshthResume23-7-25_uijy4w.pdf",
-#         "portfolio_url": "https://vinayaksarawagi.com/",  # optional
-#         # "githubUrl": "https://github.com/johndoe",  # optional
-#         # "linkedInUrl": "https://www.linkedin.com/in/johndoe/",  # optional
-#         # "leetcodeUrl": "https://leetcode.com/u/johndoe/",  # optional
-#         # "xUrl": "https://x.com/johndoe",  # optional
-#     },
-# )
 
-demo_eval: dict[str, str] = {"url": "https://github.com/vinayak25"}
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
 
-evaluate_platform("asdad", "github", demo_eval)
 
-print("app running")
+@app.post("/job")
+async def root_2(job: JobRequest):
+    try:
+        j = Job(jd_url=job.jd_url, hr_id=job.hr_id)
+        j.save()
+        return {
+            "success": True
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500, detail=f"Internal server error: {str(e)}")
 
+
+@app.get("/job")
+async def get_job(job_id: str):
+    try:
+        # Validate ObjectId format
+        if not ObjectId.is_valid(job_id):
+            raise HTTPException(
+                status_code=400, detail="Invalid job ID format")
+
+        # Query the job by ID
+        job = Job.objects(id=job_id).first()  # type: ignore
+        if not job:
+            raise HTTPException(status_code=404, detail="Job not found")
+
+        return job
+    except HTTPException:
+        raise
+    except InvalidId:
+        raise HTTPException(status_code=400, detail="Invalid job ID format")
+    except Exception as e:
+        raise HTTPException(
+            status_code=500, detail=f"Internal server error: {str(e)}")

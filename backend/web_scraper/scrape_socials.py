@@ -1,7 +1,6 @@
 from __future__ import annotations
 from pydantic import BaseModel
 # from portia.builder import PlanBuilderV2, StepOutput, Input
-from models.user import User
 from typing import Optional, Dict, Any
 
 from config.portia import config
@@ -10,7 +9,6 @@ from portia import Portia
 from portia.open_source_tools.crawl_tool import CrawlTool
 from portia.open_source_tools.search_tool import SearchTool
 from tools.pdf_reader import PdfToMarkdownTool
-
 
 
 class SocialInput(BaseModel):

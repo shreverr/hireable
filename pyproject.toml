@@ -10,4 +10,5 @@ dependencies = [
     "pytest-playwright>=0.7.0",
     "python-dotenv>=1.1.1",
     "pdfminer.six>=20240706",
+    "fastapi[standard]>=0.116.1",
 ]
